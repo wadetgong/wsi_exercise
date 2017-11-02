@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="index.js" defer></script>
+  <title>Williams Sonoma</title>
+</head>
+<body>
+  <header>
+    <div class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <div class="modal-header">Your Cart</div>
+        <div id="cart-summary-container">
+          <div id="cart-summary-header">
+            <div class="cart-column-image">Image</div>
+            <div class="cart-column-name">Name</div>
+            <div class="cart-column-quantity">Quantity</div>
+          </div>
+          <hr class="cart-divider">
+          <div id="cart-items-container">
+
+          </div>
+        </div>
+        <hr class="cart-divider">
+        <button id="checkout-add" class="add-button">Checkout</button>
+      </div>
+    </div>
+    <div id="logo">
+      <img src="assets/logo.png">
+    </div>
+    <div id="category-container" class="container">
+      <a href="#" class="category"><div>Cookware</div></a>
+      <a href="#" class="category"><div>Cooks' Tools</div></a>
+      <a href="#" class="category"><div>Cutlery</div></a>
+      <a href="#" class="category"><div>Electronics</div></a>
+      <a href="#" class="category"><div>Bakeware</div></a>
+      <a href="#" class="category"><div>Food</div></a>
+      <a href="#" class="category"><div>Tabletop &amp; Bar</div></a>
+      <a href="#" class="category"><div>Homekeeping</div></a>
+      <a href="#" class="category"><div>Outdoor</div></a>
+      <a href="#" class="category"><div>Sale</div></a>
+      <a href="#" id="home-nav" class="category"><div>Williams-Sonoma Home</div></a>
+    </div>
+  </header>
+  <section id="product-container" class="container">
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Homekeeping</a></li>
+      <li><a href="#">Aprons</a></li>
+      <li><a href="#">Adult Aprons</a></li>
+      <li>Williams-Sonoma Classic Apron, French Blue</li>
+    </ul>
+    <div id="product-info">
+      <div id="product-image-container">
+        <div id="product-image-main">
+          <!--
+          <img src="assets/product-large-a.jpg" class="product-image">
+          <img src="assets/product-large-b.jpg" class="product-image product-image-hidden">
+          <img src="assets/product-large-c.jpg" class="product-image product-image-hidden">
+          <img src="assets/product-large-d.jpg" class="product-image product-image-hidden">
+          -->
+        </div>
+        <div id="product-image-carousel">
+          <!--
+          <a href="#" class="product-image-carousel-thumbnail product-image-carousel-active"><img src="assets/product-small-a.jpg"></a>
+          <a href="#" class="product-image-carousel-thumbnail"><img src="assets/product-small-b.jpg"></a>
+          <a href="#" class="product-image-carousel-thumbnail"><img src="assets/product-small-c.jpg"></a>
+          <a href="#" class="product-image-carousel-thumbnail"><img src="assets/product-small-d.jpg"></a>
+          -->
+        </div>
+      </div>
+      <div id="product-description-container">
+        <div id="product-description-title">Williams-Sonoma Class Apron, French Blue</div>
+        <div id="product-description-detail-container">
+          <div id="product-description-detail-info">
+            A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.
+          </div>
+          <div id="product-description-detail-bullets">
+            <li>Durable 100% cotton construction.</li>
+            <li>Adjustable neckband ensures a good fit.</li>
+            <li>Roomy front pockets hold small tools.</li>
+            <li>Machine-wash.</li>
+          </div>
+        </div>
+        <div id="product-description-price">$19.95</div>
+        <input id="product-cart-quantity" type="number" name="product-quantity" value=1 min=0>
+        <button id="product-add" class="add-button">Add to Cart &#9654;</button>
+        <hr class='product-info-divider'>
+        <div>
+          <div class="collapsable-info-section collapsable-expanded">
+            <div class="collapsable-toggle-section">
+              <div class="collapsable-toggle">&#9654;</div>
+            </div>
+            <div>
+              <div class="description-detail-header">Expanded</div>
+              <p class="collapsable-description">This section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</p>
+            </div>
+          </div>
+          <hr class="description-detail-divider">
+          <div class="collapsable-info-section">
+            <div class="collapsable-toggle-section">
+              <div class="collapsable-toggle">&#9654;</div>
+            </div>
+            <div>
+              <div class="description-detail-header">Collapsed</div>
+              <p class="collapsable-description">This section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</p>
+            </div>
+          </div>
+          <hr class="description-detail-divider">
+          <div class="collapsable-info-section">
+            <div class="collapsable-toggle-section">
+              <div class="collapsable-toggle">&#9654;</div>
+            </div>
+            <div>
+              <div class="description-detail-header">Collapsed</div>
+              <p class="collapsable-description">This section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</p>
+            </div>
+          </div>
+        </div>
+        <hr class='product-info-divider'>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <hr id="footer-divider">
+  <footer>
+    <div id="footer-container">
+      <li>© Williams-Sonoma Inc., All Rights Reserved</li>
+      <li><a href="#">Terms and Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal Statement</a></li>
+    </div>
+  </footer>
+</body>
+</html>
